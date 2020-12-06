@@ -7,9 +7,41 @@
     </head>
 
     <body>
-        <div>Hello World we are software developpers </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<p>hello world we are software developers</p>
+
+        <h1 id="title">TITLE</h1>
+        <p id="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <form action="" method="get" id="survey-form">
+            <div>
+                <label for="name" id="name-label"> write your name </label>
+                <input type="text" name="name" id="name" required />
+            </div>
+
+            <div>
+                <label for="email" id="email-label"> write your email </label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="number" id="number-label">
+                    write your number
+                </label>
+                <input type="number" id="number" min="1" max="5" required />
+            </div>
+
+            <div>
+                <input type="submit" value="Submit here" id="submit" required />
+            </div>
+        </form>
+
         <script src="js/index.js"></script>
     </body>
 </html>
